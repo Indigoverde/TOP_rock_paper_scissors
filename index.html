@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+   
+    <script>
+
+// Step 2 : Computer choice
+function getComputerChoice(min, max) {
+    const randomNumber = Math.floor(Math.random() * (max - min) + min);
+    if (randomNumber === 1) {
+        return ("rock");
+    }
+    else if (randomNumber === 2) {
+        return ("paper");
+    }
+    else {return ("scissors"); }
+}
+
+console.log(getComputerChoice(1, 4));
+
+
+    </script>
+</body>
+</html>
