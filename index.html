@@ -25,12 +25,19 @@ console.log(getComputerChoice(1, 4));
 
 //Step 2 : Human choice
 function getHumanChoice() {
-    let humanChoice = prompt("Rock, paper or scissors?");
-    console.log(humanChoice);
-    return humanChoice;
+    return prompt("Rock, paper or scissors?");
 }
 
 getHumanChoice();
+
+// Step 3 : Score variables
+
+let humanScore = 0;
+let computerScore = 0;
+
+// Step 4 : The logic to play a single round
+function playround(humanChoice, computerChoice) {
+
 
 
     </script>
