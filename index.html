@@ -9,7 +9,7 @@
    
     <script>
 
-// Step 2 : Computer choice
+// Step 1 : Computer choice
 function getComputerChoice(min, max) {
     const randomNumber = Math.floor(Math.random() * (max - min) + min);
     if (randomNumber === 1) {
@@ -22,6 +22,15 @@ function getComputerChoice(min, max) {
 }
 
 console.log(getComputerChoice(1, 4));
+
+//Step 2 : Human choice
+function getHumanChoice() {
+    let humanChoice = prompt("Rock, paper or scissors?");
+    console.log(humanChoice);
+    return humanChoice;
+}
+
+getHumanChoice();
 
 
     </script>
